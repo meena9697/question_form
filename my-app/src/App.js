@@ -1,15 +1,15 @@
 import React from "react";
-import QuestionDetails from "./components/QuestionDetails";
-import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+
+import QuestionDetails from "./components/QuestionDetail/QuestionDetails";
+import ManageQuestions from "./components/ManageQuestions/ManageQuestions";
 
 function App() {
   return (
     <div className="App">
       <ToastContainer />
-      <Routes>
-        <Route path="/" element={<QuestionDetails />} />
-      </Routes>
+      <ManageQuestions/>
+      <QuestionDetails/>
     </div>
   );
 }
